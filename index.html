@@ -86,6 +86,14 @@ body{
   color:white;
 }
 
+/* LOGO */
+.logo{
+  width:110px;
+  margin-bottom:15px;
+  display:block;
+  filter:drop-shadow(0 5px 10px rgba(0,0,0,0.4));
+}
+
 .badge{
   display:inline-block;
   padding:10px 18px;
@@ -193,7 +201,7 @@ body{
   display:block;
 }
 
-/* BUTTON */
+/* BUTTON FIX */
 .floating-btn{
   position:fixed;
   left:50%;
@@ -208,9 +216,11 @@ body{
   width:90%;
   max-width:420px;
   border:none;
+  z-index:9999;
+  box-shadow:0 10px 25px rgba(0,0,0,0.25);
 }
 
-/* TEXT STYLE */
+/* TEXT */
 h3{margin-bottom:15px;}
 p{margin-bottom:15px;}
 li{margin-bottom:10px;}
@@ -225,9 +235,13 @@ li{margin-bottom:10px;}
 
 <section class="hero">
 <div class="hero-content">
+
+<img src="LOGO-KAMU.png" class="logo">
+
 <div class="badge">🎟️ Official Concert Experience</div>
 <h1>POLIPONI 2026</h1>
 <p>Sheila On 7 • Bali United Training Center</p>
+
 </div>
 </section>
 
@@ -268,33 +282,26 @@ li{margin-bottom:10px;}
 <div class="tab" onclick="openTab(1)">Syarat & Ketentuan</div>
 </div>
 
-<!-- DESKRIPSI -->
 <div class="tab-content active">
 <h3>Tentang Event</h3>
 
-<p><b>POLIPONI 2026</b> menghadirkan pengalaman konser musik premium dengan penampilan spesial dari <b>Sheila On 7</b>, salah satu band legendaris Indonesia.</p>
+<p><b>POLIPONI 2026</b> menghadirkan pengalaman konser musik premium dengan penampilan spesial dari <b>Sheila On 7</b>.</p>
 
-<p>Diselenggarakan di <b>Bali United Training Center</b>, event ini mengusung konsep festival modern dengan tata panggung spektakuler, visual immersive, dan sistem audio berkualitas tinggi.</p>
+<p>Diselenggarakan di <b>Bali United Training Center</b>, dengan konsep festival modern dan visual spektakuler.</p>
 
-<p>Didukung oleh promotor profesional <b>LETRALIVE</b> serta ticketing partner resmi, acara ini menjadi destinasi utama bagi pecinta musik di Indonesia.</p>
+<p>Didukung oleh promotor <b>LETRALIVE</b>.</p>
 
 </div>
 
-<!-- SYARAT -->
 <div class="tab-content">
 <h3>Syarat & Ketentuan</h3>
 
 <ul>
 <li>Tiket hanya berlaku untuk 1 orang dan 1 kali masuk.</li>
 <li>E-ticket wajib ditunjukkan saat masuk venue.</li>
-<li>Tiket tidak dapat dikembalikan (non-refundable).</li>
-<li>Wajib membawa identitas resmi (KTP/SIM/Paspor).</li>
-<li>Dilarang membawa senjata tajam dan narkoba.</li>
-<li>Dilarang membawa makanan/minuman dari luar.</li>
-<li>Dilarang membawa kamera profesional tanpa izin.</li>
-<li>Penyelenggara berhak menolak pengunjung yang melanggar aturan.</li>
-<li>Pengunjung menyetujui dokumentasi acara untuk promosi.</li>
-<li>Penyelenggara tidak bertanggung jawab atas kehilangan barang.</li>
+<li>Tiket tidak dapat dikembalikan.</li>
+<li>Wajib membawa identitas resmi.</li>
+<li>Dilarang membawa barang terlarang.</li>
 </ul>
 
 </div>
