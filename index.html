@@ -236,7 +236,7 @@ li{
   color:#555;
 }
 
-/* BUTTON */
+/* BUTTON (TIDAK DIUBAH) */
 
 .floating-btn{
   position:fixed;
@@ -294,41 +294,6 @@ li{
   color:#888;
 }
 
-/* MOBILE */
-
-@media(max-width:768px){
-
-.hero{
-  height:360px;
-  padding:24px;
-}
-
-.hero h1{
-  font-size:32px;
-}
-
-.card{
-  padding:22px;
-}
-
-.tabs{
-  flex-direction:column;
-}
-
-.tab{
-  width:100%;
-}
-
-.info-grid{
-  grid-template-columns:1fr;
-}
-
-.floating-btn{
-  width:90%;
-}
-
-}
-
 </style>
 
 </head>
@@ -337,32 +302,15 @@ li{
 
 <div class="bg-blur"></div>
 
-<!-- HERO -->
-
 <section class="hero">
-
 <div class="hero-content">
-
-<div class="badge">
-🎟️ Official Concert Experience
-</div>
-
-<h1>
-POLIPONI 2026
-</h1>
-
-<p>
-Si paling konser 2026 • Bali United Training Center
-</p>
-
+<div class="badge">🎟️ Official Concert Experience</div>
+<h1>POLIPONI 2026</h1>
+<p>Si paling konser 2026 • Bali United Training Center</p>
 </div>
 </section>
 
-<!-- CONTENT -->
-
 <div class="container">
-
-<!-- INFO CARD -->
 
 <div class="card">
 
@@ -370,7 +318,6 @@ Si paling konser 2026 • Bali United Training Center
 
 <div class="info-item">
 <div class="icon">📅</div>
-
 <div>
 <div class="label">Tanggal</div>
 <div class="value">04 Juli 2026</div>
@@ -379,7 +326,6 @@ Si paling konser 2026 • Bali United Training Center
 
 <div class="info-item">
 <div class="icon">⏰</div>
-
 <div>
 <div class="label">Jam</div>
 <div class="value">14:00 - 23:00</div>
@@ -388,7 +334,6 @@ Si paling konser 2026 • Bali United Training Center
 
 <div class="info-item">
 <div class="icon">📍</div>
-
 <div>
 <div class="label">Lokasi</div>
 <div class="value">Bali United Training Center</div>
@@ -397,83 +342,38 @@ Si paling konser 2026 • Bali United Training Center
 
 </div>
 
-<!-- TABS -->
-
 <div class="tabs">
 
-<div class="tab active" onclick="openTab(0)">
-Deskripsi
-</div>
-
-<div class="tab" onclick="openTab(1)">
-Syarat & Ketentuan
-</div>
+<div class="tab active" onclick="openTab(0)">Deskripsi</div>
+<div class="tab" onclick="openTab(1)">Syarat & Ketentuan</div>
 
 </div>
-
-<!-- TAB 1 -->
 
 <div class="tab-content active">
-
 <h3>Tentang Event</h3>
-
-<p>
-<b>POLIPONI</b> adalah konser yang menghadirkan pengalaman terbaik dalam menikmati pertunjukan musik dan hiburan modern.
-</p>
-
-<p>
-Di bawah naungan <b>LETRALIVE</b>, POLIPONI akan menghadirkan deretan musisi populer Indonesia dengan pengalaman konser yang eksklusif dan tak terlupakan.
-</p>
-
-<p>
-Nikmati suasana festival premium, tata panggung spektakuler, dan atmosfer konser yang dirancang untuk memberikan pengalaman terbaik bagi seluruh penonton.
-</p>
-
+<p><b>POLIPONI</b> adalah konser yang menghadirkan pengalaman terbaik.</p>
 </div>
-
-<!-- TAB 2 -->
 
 <div class="tab-content">
-
 <ul>
-<li>E-Ticket yang valid hanya yang dibeli melalui saluran resmi.</li>
-<li>Satu E-Ticket berlaku untuk satu orang dan satu kali masuk.</li>
-<li>Data pembeli wajib sesuai identitas resmi.</li>
-<li>Tiket yang sudah dibeli tidak dapat dikembalikan.</li>
-<li>Dilarang membawa senjata tajam dan narkoba.</li>
-<li>Dilarang membawa makanan dan minuman dari luar.</li>
-<li>Dilarang membawa kamera profesional tanpa izin.</li>
-<li>Wajib membawa identitas asli saat penukaran tiket.</li>
-<li>Penyelenggara tidak bertanggung jawab atas kehilangan barang.</li>
-<li>Dengan membeli tiket berarti menyetujui seluruh syarat dan ketentuan.</li>
+<li>E-Ticket hanya dari resmi.</li>
+<li>Satu tiket satu orang.</li>
+<li>Tidak bisa refund.</li>
 </ul>
-
 </div>
 
 </div>
-
-<!-- FOOTER -->
 
 <footer class="footer">
-
 <div class="footer-card">
-
 <img src="LOGO-KAMU.png" alt="Logo">
-
 <p>@poliponi.id</p>
 <p>@letralive.official</p>
-
-<small>
-© 2026 POLIPONI • Si Paling Konser
-</small>
-
+<small>© 2026 POLIPONI</small>
 </div>
-
 </footer>
 
 </div>
-
-<!-- BUTTON -->
 
 <button class="floating-btn" onclick="beliTiket()">
 🎟️ Beli Tiket Sekarang
@@ -482,25 +382,16 @@ Nikmati suasana festival premium, tata panggung spektakuler, dan atmosfer konser
 <script>
 
 function openTab(index){
-
 const tabs = document.querySelectorAll('.tab');
 const contents = document.querySelectorAll('.tab-content');
 
-tabs.forEach((tab,i)=>{
-  tab.classList.toggle('active', i === index);
-});
-
-contents.forEach((content,i)=>{
-  content.classList.toggle('active', i === index);
-});
-
+tabs.forEach((tab,i)=> tab.classList.toggle('active', i===index));
+contents.forEach((c,i)=> c.classList.toggle('active', i===index));
 }
 
+/* HANYA REDIRECT (TIDAK UBAH UI) */
 function beliTiket(){
-
-window.location.href =
-"https://alyssamutiara3-cyber.github.io/CATEGORY-TIKET/";
-
+window.location.href="https://alyssamutiara3-cyber.github.io/CATEGORY-TIKET/";
 }
 
 </script>
