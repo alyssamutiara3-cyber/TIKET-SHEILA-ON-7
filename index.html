@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="id">
 <head>
 <meta charset="UTF-8">
@@ -217,27 +216,7 @@ body{
   display:block;
 }
 
-.tab-content h3{
-  margin-bottom:18px;
-  font-size:24px;
-}
-
-.tab-content p{
-  margin-bottom:18px;
-  color:#555;
-}
-
-ul{
-  padding-left:18px;
-}
-
-li{
-  margin-bottom:12px;
-  color:#555;
-}
-
-/* BUTTON (TIDAK DIUBAH) */
-
+/* BUTTON FIX */
 .floating-btn{
   position:fixed;
   left:50%;
@@ -254,44 +233,13 @@ li{
   box-shadow:0 15px 30px rgba(106,0,255,0.28);
   z-index:999;
   transition:.3s;
+
+  width:90%;
+  max-width:420px;
 }
 
 .floating-btn:hover{
   transform:translateX(-50%) translateY(-4px);
-}
-
-/* FOOTER */
-
-.footer{
-  padding:70px 20px 120px;
-  text-align:center;
-}
-
-.footer-card{
-  background:white;
-  max-width:500px;
-  margin:auto;
-  padding:35px;
-  border-radius:28px;
-  box-shadow:var(--shadow);
-}
-
-.footer img{
-  width:120px;
-  margin:auto;
-  margin-bottom:20px;
-}
-
-.footer p{
-  margin:8px 0;
-  color:#555;
-  font-weight:500;
-}
-
-.footer small{
-  display:block;
-  margin-top:20px;
-  color:#888;
 }
 
 </style>
@@ -343,10 +291,8 @@ li{
 </div>
 
 <div class="tabs">
-
 <div class="tab active" onclick="openTab(0)">Deskripsi</div>
 <div class="tab" onclick="openTab(1)">Syarat & Ketentuan</div>
-
 </div>
 
 <div class="tab-content active">
@@ -364,15 +310,6 @@ li{
 
 </div>
 
-<footer class="footer">
-<div class="footer-card">
-<img src="LOGO-KAMU.png" alt="Logo">
-<p>@poliponi.id</p>
-<p>@letralive.official</p>
-<small>© 2026 POLIPONI</small>
-</div>
-</footer>
-
 </div>
 
 <button class="floating-btn" onclick="beliTiket()">
@@ -382,14 +319,13 @@ li{
 <script>
 
 function openTab(index){
-const tabs = document.querySelectorAll('.tab');
-const contents = document.querySelectorAll('.tab-content');
+const tabs=document.querySelectorAll('.tab');
+const contents=document.querySelectorAll('.tab-content');
 
-tabs.forEach((tab,i)=> tab.classList.toggle('active', i===index));
-contents.forEach((c,i)=> c.classList.toggle('active', i===index));
+tabs.forEach((tab,i)=>tab.classList.toggle('active',i===index));
+contents.forEach((c,i)=>c.classList.toggle('active',i===index));
 }
 
-/* HANYA REDIRECT (TIDAK UBAH UI) */
 function beliTiket(){
 window.location.href="https://alyssamutiara3-cyber.github.io/CATEGORY-TIKET/";
 }
